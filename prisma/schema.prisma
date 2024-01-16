@@ -26,6 +26,7 @@ model Frota {
   informacao  String
   precodiario Int
   imagem      String
+  tipo        String
   carrosLoja  CarroLoja[]
 }
 
