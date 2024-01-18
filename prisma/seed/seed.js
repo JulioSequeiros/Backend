@@ -4,7 +4,6 @@ const prisma = new PrismaClient();
 
 async function seed() {
   try {
-    // Create a sample store
     const loja = await prisma.loja.create({
       data: {
         name: 'Happy Car Rent Porto',
@@ -24,6 +23,7 @@ async function seed() {
                   informacao: 'Available for rent',
                   precodiario: 150,
                   imagem: 'https://example.com/porsche-911.jpg',
+                  local: 'lol',
                   tipo: 'Sports Car',
                 },
               },
@@ -37,6 +37,7 @@ async function seed() {
                   informacao: 'Available for rent',
                   precodiario: 120,
                   imagem: 'https://example.com/jeep-grand-cherokee.jpg',
+                  local: 'VIana',
                   tipo: 'SUV',
                 },
               },

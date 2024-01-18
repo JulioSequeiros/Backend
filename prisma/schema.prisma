@@ -27,6 +27,7 @@ model Frota {
   precodiario Int
   imagem      String
   tipo        String
+  local       String
   carrosLoja  CarroLoja[]
 }
 

@@ -46,7 +46,7 @@ app.get('/carros', async (req, res) => {
     }
 });
 
-app.get('/api/lojas/:id/carro', async (req, res) => {
+app.get('/api/lojas/:id/carros', async (req, res) => {
     const { id } = req.params;
     const { marca } = req.query;
 
